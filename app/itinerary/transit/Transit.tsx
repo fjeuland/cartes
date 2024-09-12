@@ -43,6 +43,12 @@ export default function Transit({ itinerary, searchParams }) {
 			`}
 		>
 			<DateSelector date={date} />
+			<section>
+				🚶🚌 définir vos modes de transport. On va faire une frise [mode de
+				départ / temps | transport (choix : bus, etc ; choix direct ; temps de
+				correspondance minimum ; ) | à destination / temps / parking relais pour
+				les voitures]
+			</section>
 			<TransitContent {...{ itinerary, searchParams, date }} />
 		</div>
 	)
